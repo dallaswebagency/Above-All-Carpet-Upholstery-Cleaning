@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Above All Carpet and Upholstery Cleaning | Calgary &amp; Chestermere</title>
+<meta name="description" content="Above All Carpet and Upholstery Cleaning. Residential carpet, commercial carpet, upholstery and move-in/move-out carpet cleaning in Calgary and surrounding areas. 30 years serving our community. Open 24/7.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1f1c56;
+  --navy-2:#2b2770;
+  --ink:#141238;
+  --red:#e3201b;
+  --red-d:#b8150f;
+  --silver:#d8d9da;
+  --mist:#eef0f4;
+  --paper:#f7f6f2;
+  --line:rgba(31,28,86,.14);
+  --text:#3b3a55;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Figtree',sans-serif;color:var(--text);background:var(--paper);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1240px,92%);margin-inline:auto}
+.display{font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:800;color:var(--navy);line-height:.98;letter-spacing:-.02em}
+.tag{display:inline-flex;align-items:center;gap:.6rem;font-family:'Archivo',sans-serif;font-stretch:110%;font-weight:700;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.tag::before{content:"";width:26px;height:2px;background:currentColor}
+.btn{display:inline-flex;align-items:center;gap:.7rem;font-family:'Archivo',sans-serif;font-stretch:108%;font-weight:700;font-size:.95rem;padding:1rem 1.6rem;border-radius:100px;transition:.25s;cursor:pointer;border:0}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-d);transform:translateY(-2px)}
+.btn-line{border:2px solid var(--navy);color:var(--navy)}
+.btn-line:hover{background:var(--navy);color:#fff}
+.btn svg{width:18px;height:18px}
+
+/* top bar */
+.topbar{background:var(--ink);color:#c9c8e6;font-size:.85rem}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:.55rem 0;gap:1rem}
+.topbar b{color:#fff;font-weight:600}
+.live{display:inline-flex;align-items:center;gap:.5rem}
+.live i{width:8px;height:8px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 4px rgba(61,220,132,.2);animation:pulse 2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 7px rgba(61,220,132,0)}}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(247,246,242,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0;gap:2rem}
+.brand{display:flex;align-items:center;gap:.85rem}
+.brand img{width:58px;height:58px}
+.brand-name{font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:900;color:var(--navy);font-size:1.25rem;line-height:1;letter-spacing:-.01em}
+.brand-name small{display:block;font-stretch:100%;font-weight:600;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-top:.35rem}
+nav ul{display:flex;gap:2rem;list-style:none}
+nav a{font-weight:600;font-size:.95rem;color:var(--navy);position:relative}
+nav a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--red);transition:.25s}
+nav a:hover::after,nav a.on::after{width:100%}
+.head-call{display:flex;align-items:center;gap:.8rem}
+.head-call .ph{font-family:'Archivo',sans-serif;font-weight:800;color:var(--navy);font-size:1.05rem;line-height:1.1;text-align:right}
+.head-call .ph small{display:block;font-family:'Figtree';font-weight:500;font-size:.72rem;color:var(--text);letter-spacing:.06em;text-transform:uppercase}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;height:2px;background:var(--navy);margin:6px 8px}
+
+/* hero */
+.hero{position:relative;padding:4.5rem 0 0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(3rem,6.6vw,6.2rem);margin:1.4rem 0 1.6rem}
+.hero h1 .q{color:var(--red);display:inline-block}
+.hero h1 .thin{font-weight:400;font-stretch:75%;font-style:italic;color:var(--navy)}
+.hero p.lead{font-size:1.18rem;max-width:520px;margin-bottom:2.2rem}
+.hero .ctas{display:flex;gap:1rem;flex-wrap:wrap}
+.disc{position:relative;aspect-ratio:1;width:100%;max-width:540px;margin-left:auto}
+.disc .ring{position:absolute;inset:0;border-radius:50%;border:14px solid var(--red);box-shadow:inset 0 0 0 10px var(--paper)}
+.disc .ph-img{position:absolute;inset:24px;border-radius:50%;overflow:hidden;background:var(--mist)}
+.disc .ph-img img{width:100%;height:100%;object-fit:cover}
+.spin{position:absolute;width:150px;height:150px;left:-30px;bottom:30px;background:var(--navy);border-radius:50%;display:grid;place-items:center;box-shadow:0 20px 40px rgba(20,18,56,.3)}
+.spin svg{position:absolute;inset:0;animation:rot 18s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+.spin strong{font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:900;font-size:2.4rem;color:#fff;line-height:1}
+.spin strong small{display:block;font-size:.62rem;letter-spacing:.2em;text-align:center;color:var(--silver);margin-top:3px}
+.stamp{position:absolute;right:0;top:20px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:.9rem 1.1rem;box-shadow:0 18px 40px rgba(20,18,56,.12);display:flex;gap:.75rem;align-items:center}
+.stamp b{font-family:'Archivo',sans-serif;font-size:1.6rem;color:var(--red);font-weight:900;line-height:1}
+.stamp span{font-size:.82rem;line-height:1.25;color:var(--navy);font-weight:600}
+
+/* ribbon */
+.ribbon{margin-top:4.5rem;background:var(--navy);color:#fff;overflow:hidden;transform:rotate(-1.2deg);margin-inline:-2%;}
+.ribbon-track{display:flex;gap:3rem;white-space:nowrap;padding:1.15rem 0;animation:slide 32s linear infinite;width:max-content}
+.ribbon-track span{font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:800;font-size:1.25rem;text-transform:uppercase;letter-spacing:.04em;display:flex;align-items:center;gap:3rem}
+.ribbon-track span::after{content:"";width:12px;height:12px;border-radius:50%;background:var(--red)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* intro / 30 years */
+.intro{padding:7rem 0 5rem}
+.intro .wrap{display:grid;grid-template-columns:auto 1fr;gap:5rem;align-items:start}
+.big-num{font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:900;font-size:clamp(8rem,17vw,15rem);line-height:.8;color:transparent;-webkit-text-stroke:2px var(--navy);position:relative;display:inline-block;padding-right:.3em}
+.big-num em{font-style:normal;color:var(--red);-webkit-text-stroke:0;font-size:.35em;position:absolute;right:-.2em;top:-.1em}
+.big-num-cap{font-family:'Archivo',sans-serif;font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:.8rem;color:var(--navy);margin-top:1.4rem}
+.intro h2{font-size:clamp(2rem,3.6vw,3.2rem);margin:1rem 0 1.4rem}
+.intro p{max-width:640px;margin-bottom:1rem}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:2.6rem;border-top:1px solid var(--line)}
+.facts div{padding:1.4rem 1.4rem 0 0}
+.facts div+div{padding-left:1.4rem;border-left:1px solid var(--line)}
+.facts b{font-family:'Archivo',sans-serif;font-stretch:115%;font-weight:800;font-size:1.9rem;color:var(--navy);display:block;line-height:1.1}
+.facts span{font-size:.9rem}
+
+/* services */
+.services{background:#fff;padding:6.5rem 0;border-block:1px solid var(--line)}
+.sv-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-bottom:3.2rem;flex-wrap:wrap}
+.sv-head h2{font-size:clamp(2.2rem,4.4vw,4rem);max-width:760px;margin-top:1rem}
+.sv-head p{max-width:360px}
+.sv{display:grid;grid-template-columns:.95fr 1.05fr;gap:3rem;align-items:stretch}
+.sv-list{list-style:none;border-top:2px solid var(--navy)}
+.sv-list button{all:unset;cursor:pointer;width:100%;display:grid;grid-template-columns:56px 1fr 40px;align-items:center;padding:1.55rem 0;border-bottom:1px solid var(--line);transition:.25s}
+.sv-list .n{font-family:'Archivo',sans-serif;font-weight:700;font-size:.9rem;color:var(--red)}
+.sv-list .t{font-family:'Archivo',sans-serif;font-stretch:112%;font-weight:800;font-size:clamp(1.3rem,2.2vw,1.85rem);color:var(--navy);line-height:1.1;transition:.25s}
+.sv-list .ar{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;color:var(--navy);transition:.25s}
+.sv-list button:hover .t{transform:translateX(8px)}
+.sv-list button.on .t{color:var(--red)}
+.sv-list button.on .ar{background:var(--red);border-color:var(--red);color:#fff;transform:rotate(-45deg)}
+.sv-panel{position:relative;border-radius:28px;overflow:hidden;background:var(--navy);min-height:520px;color:#fff}
+.sv-panel .pane{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .45s}
+.sv-panel .pane.on{opacity:1;visibility:visible}
+.pane img{width:100%;height:100%;object-fit:cover}
+.pane::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,56,0) 30%,rgba(20,18,56,.92) 100%)}
+.pane .cap{position:absolute;left:0;right:0;bottom:0;padding:2.2rem;z-index:2}
+.pane h3{font-family:'Archivo',sans-serif;font-stretch:115%;font-weight:800;font-size:1.9rem;line-height:1.1;margin-bottom:.6rem}
+.pane p{color:#dcdbf0;max-width:460px;margin-bottom:1.1rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chips span{font-size:.8rem;font-weight:600;padding:.4rem .85rem;border-radius:100px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22)}
+.extras{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2.6rem;align-items:center}
+.extras b{font-family:'Archivo',sans-serif;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);margin-right:.6rem}
+.extras span{padding:.5rem 1rem;border-radius:100px;border:1.5px dashed var(--navy);color:var(--navy);font-weight:600;font-size:.88rem}
+
+/* really clean */
+.really{padding:7rem 0;position:relative}
+.really .wrap{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.really-img{position:relative}
+.really-img img{border-radius:28px;width:100%;aspect-ratio:4/3.4;object-fit:cover}
+.really-img .note{position:absolute;right:-24px;bottom:-30px;background:var(--red);color:#fff;padding:1.4rem 1.6rem;border-radius:20px;max-width:250px;box-shadow:0 20px 40px rgba(227,32,27,.3)}
+.note b{font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:900;font-size:2.4rem;line-height:1;display:block}
+.note span{font-size:.88rem;line-height:1.35;display:block;margin-top:.4rem}
+.really h2{font-size:clamp(2.2rem,4vw,3.6rem);margin:1rem 0 1.4rem}
+.really ul{list-style:none;margin-top:1.6rem;display:grid;gap:.9rem}
+.really li{display:flex;gap:1rem;align-items:flex-start;padding:1rem 1.2rem;background:#fff;border:1px solid var(--line);border-radius:14px}
+.really li svg{flex:none;width:26px;height:26px;color:var(--red);margin-top:2px}
+.really li b{color:var(--navy);display:block}
+
+/* appointment ticket */
+.appt{background:var(--ink);color:#fff;padding:7rem 0;position:relative;overflow:hidden}
+.appt::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.025) 0 2px,transparent 2px 14px);pointer-events:none}
+.appt .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:4rem;align-items:center;position:relative}
+.appt h2{color:#fff;font-size:clamp(2.4rem,4.4vw,4rem);margin:1rem 0 1.4rem}
+.appt p{color:#c9c8e6;max-width:430px}
+.ticket{background:var(--paper);color:var(--text);border-radius:22px;display:grid;grid-template-columns:1fr 150px;position:relative;box-shadow:0 40px 80px rgba(0,0,0,.35);transform:rotate(1.5deg)}
+.ticket .main{padding:2.2rem 2.2rem 2rem}
+.ticket .stub{border-left:2px dashed rgba(31,28,86,.25);position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;padding:1.2rem;text-align:center}
+.ticket .stub::before,.ticket .stub::after{content:"";position:absolute;left:-15px;width:28px;height:28px;border-radius:50%;background:var(--ink)}
+.ticket .stub::before{top:-14px}.ticket .stub::after{bottom:-14px}
+.stub img{width:64px}
+.stub b{font-family:'Archivo',sans-serif;font-stretch:120%;font-weight:900;color:var(--navy);font-size:1.15rem;line-height:1.05}
+.stub small{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:700}
+.ticket h3{font-family:'Archivo',sans-serif;font-stretch:118%;font-weight:800;color:var(--navy);font-size:1.1rem;letter-spacing:.06em;text-transform:uppercase;display:flex;justify-content:space-between;padding-bottom:1rem;border-bottom:2px solid var(--navy);margin-bottom:.4rem}
+.ticket h3 span{color:var(--red)}
+.ticket ol{list-style:none;counter-reset:s}
+.ticket li{counter-increment:s;display:grid;grid-template-columns:42px 1fr 22px;gap:.4rem;align-items:center;padding:.95rem 0;border-bottom:1px dotted rgba(31,28,86,.3);font-weight:600;color:var(--navy)}
+.ticket li::before{content:"0" counter(s);font-family:'Archivo',sans-serif;font-weight:800;color:var(--red);font-size:.9rem}
+.ticket li::after{content:"";width:18px;height:18px;border-radius:5px;background:var(--navy) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/12px no-repeat}
+.ticket li:last-child{border:0}
+
+/* gallery */
+.gallery{padding:7rem 0 5rem}
+.gal-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-bottom:2.6rem;flex-wrap:wrap}
+.gal-head h2{font-size:clamp(2.2rem,4vw,3.6rem);margin-top:1rem}
+.gal{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:240px 240px;gap:1rem}
+.gal figure{position:relative;border-radius:22px;overflow:hidden;background:var(--mist)}
+.gal figure:first-child{grid-row:span 2}
+.gal figure:nth-child(4){grid-column:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gal figure:hover img{transform:scale(1.06)}
+.gal figcaption{position:absolute;left:1rem;bottom:1rem;background:#fff;color:var(--navy);font-weight:700;font-size:.82rem;padding:.45rem .9rem;border-radius:100px}
+
+/* testimonials */
+.reviews{padding:5rem 0 7rem}
+.rv{display:grid;grid-template-columns:1.2fr 1fr;gap:1.2rem}
+.rv-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:2.2rem;display:flex;flex-direction:column;justify-content:space-between;gap:1.6rem}
+.rv-card.big{background:var(--red);color:#fff;border:0;grid-row:span 2;padding:3rem;justify-content:flex-start}
+.rv-card.big .who{margin-top:auto}
+.rv-card.big blockquote{color:#fff;font-family:'Archivo',sans-serif;font-stretch:105%;font-weight:600;font-size:clamp(1.5rem,2.4vw,2.1rem);line-height:1.25}
+.rv-card blockquote{font-size:1.08rem;color:var(--navy);font-weight:500}
+.qm{font-family:'Archivo',sans-serif;font-weight:900;font-size:5rem;line-height:.6;color:var(--red);height:36px}
+.rv-card.big .qm{color:#fff;opacity:.5}
+.who{display:flex;align-items:center;gap:.9rem}
+.who i{width:46px;height:46px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-style:normal;font-family:'Archivo',sans-serif;font-weight:800}
+.rv-card.big .who i{background:#fff;color:var(--red)}
+.who b{display:block;line-height:1.2}
+.who small{opacity:.75}
+.stars{color:#f5b400;letter-spacing:2px;font-size:.95rem}
+.rv-card.big .stars{color:#fff}
+
+/* quote */
+.quote{padding:0 0 7rem}
+.quote-box{background:var(--navy);border-radius:32px;overflow:hidden;display:grid;grid-template-columns:.9fr 1.1fr;color:#fff;position:relative}
+.quote-info{padding:3.5rem;position:relative;background:linear-gradient(160deg,rgba(31,28,86,.55),rgba(20,18,56,.96)),url(images/clean-carpet-wide.jpg) center/cover}
+.offer{display:inline-block;background:var(--red);font-family:'Archivo',sans-serif;font-stretch:115%;font-weight:800;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;padding:.55rem 1rem;border-radius:8px;transform:rotate(-3deg)}
+.quote-info h2{color:#fff;font-size:clamp(2.2rem,3.8vw,3.4rem);margin:1.4rem 0 1rem}
+.quote-info p{color:#d9d8ef}
+.c-lines{margin-top:2.2rem;display:grid;gap:1rem}
+.c-lines a,.c-lines div{display:flex;gap:1rem;align-items:center;font-weight:600}
+.c-lines i{width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.12);display:grid;place-items:center;flex:none}
+.c-lines i svg{width:20px;height:20px}
+.c-lines small{display:block;font-weight:500;color:#b8b7da;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+form{background:#fff;padding:3.2rem;color:var(--text);display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;align-content:start}
+form h3{grid-column:1/-1;font-family:'Archivo',sans-serif;font-stretch:115%;font-weight:800;font-size:1.6rem;color:var(--navy)}
+form label{display:grid;gap:.4rem;font-size:.82rem;font-weight:700;color:var(--navy);letter-spacing:.04em}
+form .full{grid-column:1/-1}
+input,select,textarea{font:inherit;font-size:1rem;padding:.9rem 1rem;border:1.5px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);width:100%;transition:.2s}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--navy);background:#fff}
+textarea{min-height:120px;resize:vertical}
+form .btn{justify-content:center;grid-column:1/-1;padding:1.15rem}
+
+/* areas */
+.areas{padding:0 0 6rem}
+.areas .wrap{display:flex;gap:2rem;align-items:center;justify-content:space-between;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:2.2rem 0}
+.areas h3{font-family:'Archivo',sans-serif;font-stretch:115%;font-weight:800;color:var(--navy);font-size:1.4rem}
+.area-list{display:flex;flex-wrap:wrap;gap:.6rem}
+.area-list span{padding:.55rem 1.1rem;border-radius:100px;background:#fff;border:1px solid var(--line);font-weight:600;color:var(--navy);font-size:.92rem;display:flex;align-items:center;gap:.5rem}
+.area-list span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--red)}
+.area-list span.home{background:var(--navy);color:#fff}
+
+/* closing */
+.closing{background:var(--red);color:#fff;padding:5.5rem 0;text-align:center;position:relative;overflow:hidden}
+.closing::before{content:"ABOVE ALL";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:'Archivo',sans-serif;font-stretch:125%;font-weight:900;font-size:22vw;color:rgba(255,255,255,.07);white-space:nowrap;line-height:1}
+.closing h2{color:#fff;font-size:clamp(2.2rem,4.6vw,4.2rem);max-width:900px;margin:0 auto 2rem;position:relative}
+.closing h2 em{white-space:nowrap;font-style:normal;background:#fff;color:var(--red);padding:0 .25em;border-radius:10px}
+.closing .ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative}
+.btn-white{background:#fff;color:var(--red)}
+.btn-white:hover{background:var(--navy);color:#fff}
+.btn-ghost{border:2px solid #fff;color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--red)}
+
+/* footer */
+footer{background:var(--ink);color:#bdbcdc;padding:5rem 0 0;font-size:.95rem}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.3fr;gap:3rem}
+footer .brand-name{color:#fff}
+footer .brand-name small{white-space:nowrap}
+footer h4{font-family:'Archivo',sans-serif;font-stretch:112%;color:#fff;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:1.2rem}
+footer ul{list-style:none;display:grid;gap:.6rem}
+footer a:hover{color:#fff}
+.f-about p{margin-top:1.2rem;max-width:300px}
+.f-contact li{display:flex;gap:.7rem}
+.f-contact b{color:#fff;font-weight:600}
+.f-bottom{margin-top:4rem;border-top:1px solid rgba(255,255,255,.1);padding:1.6rem 0;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.85rem}
+.f-bottom a{color:#fff;font-weight:600}
+
+/* mobile bar */
+.mbar{display:none}
+
+/* reveal */
+.rv-in{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}
+.rv-in.vis{opacity:1;transform:none}
+
+@media (max-width:1080px){
+  nav,.head-call .ph{display:none}
+  .burger{display:block}
+  nav.open{display:block;position:absolute;top:100%;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:1.2rem 4%}
+  nav.open ul{flex-direction:column;gap:1rem}
+  .hero .wrap,.intro .wrap,.sv,.really .wrap,.appt .wrap,.quote-box,.rv{grid-template-columns:1fr}
+  .disc{max-width:440px;margin:0 auto}
+  .intro .wrap{gap:2rem}
+  .sv-panel{min-height:440px}
+  .really-img .note{right:12px}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .rv-card.big{grid-row:auto}
+}
+@media (max-width:680px){
+  body{font-size:16px;padding-bottom:64px}
+  .topbar .hide-s{display:none}
+  .head-call .btn{display:none}
+  .brand img{width:48px;height:48px}
+  .brand-name{font-size:1.02rem}
+  .hero{padding-top:2.6rem}
+  .spin{width:110px;height:110px;left:-6px}
+  .spin strong{font-size:1.7rem}
+  .stamp{top:0;right:-4px;padding:.7rem .8rem}
+  .facts{grid-template-columns:1fr}
+  .facts div+div{border-left:0;padding-left:0}
+  .gal{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px}
+  .gal figure:first-child{grid-row:auto;grid-column:span 2}
+  .gal figure:nth-child(4){grid-column:span 2}
+  .ticket{grid-template-columns:1fr;transform:none}
+  .ticket .stub{border-left:0;border-top:2px dashed rgba(31,28,86,.25);flex-direction:row}
+  .ticket .stub::before,.ticket .stub::after{display:none}
+  form,.quote-info{padding:2rem 1.5rem}
+  form{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:60}
+  .mbar a{display:flex;align-items:center;justify-content:center;gap:.5rem;padding:1.1rem;font-family:'Archivo',sans-serif;font-weight:800;color:#fff;background:var(--navy)}
+  .mbar a+a{background:var(--red)}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="live"><i></i><b>Open 24 hours, 7 days a week</b></span>
+    <span class="hide-s">Serving Calgary and surrounding areas for 30 years</span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="brand">
+      <img src="images/logo.png" alt="Above All Carpet and Upholstery Cleaning logo">
+      <span class="brand-name">ABOVE ALL<small>Carpet &amp; Upholstery Cleaning</small></span>
+    </a>
+    <nav id="nav">
+      <ul>
+        <li><a href="#" class="on">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#quote">Pricing</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="head-call">
+      <a href="tel:4036188123" class="ph"><small>Call 24/7</small>403-618-8123</a>
+      <a href="#quote" class="btn btn-red">Free Quote</a>
+      <button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="rv-in">
+      <span class="tag">Professional Carpet and Upholstery Cleaning</span>
+      <h1 class="display">How clean are your carpets <span class="thin">really</span><span class="q">?</span></h1>
+      <p class="lead">A healthier home or workspace starts underfoot. We remove odours and stains and kill 99% of bacteria and viruses, without harsh chemicals.</p>
+      <div class="ctas">
+        <a href="tel:4036188123" class="btn btn-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call Now</a>
+        <a href="mailto:info@aboveallcarpetandupholsterycleaning.com" class="btn btn-line">Email to Book an Appointment</a>
+      </div>
+    </div>
+    <div class="disc rv-in">
+      <div class="ring"></div>
+      <div class="ph-img"><img src="images/steam-wand.jpg" alt="Technician steam cleaning a carpet"></div>
+      <div class="spin">
+        <svg viewBox="0 0 150 150"><defs><path id="c" d="M75,75 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs><text font-family="Archivo, sans-serif" font-weight="700" font-size="11.5" letter-spacing="3.2" fill="#d8d9da"><textPath href="#c">SERVICE &amp; RESULTS THAT ARE ABOVE ALL &#8226; </textPath></text></svg>
+        <strong>30<small>YEARS</small></strong>
+      </div>
+      <div class="stamp"><b>99%</b><span>bacteria &amp;<br>viruses killed</span></div>
+    </div>
+  </div>
+  <div class="ribbon">
+    <div class="ribbon-track">
+      <span>Residential Carpet</span><span>Commercial Carpet</span><span>Upholstery</span><span>Move-In / Move-Out</span><span>Pet Odour Removal</span><span>Stain Removal</span><span>Rug Cleaning</span><span>Scotchgard Protection</span>
+      <span>Residential Carpet</span><span>Commercial Carpet</span><span>Upholstery</span><span>Move-In / Move-Out</span><span>Pet Odour Removal</span><span>Stain Removal</span><span>Rug Cleaning</span><span>Scotchgard Protection</span>
+    </div>
+  </div>
+</section>
+
+<section class="intro" id="about">
+  <div class="wrap">
+    <div class="rv-in">
+      <div class="big-num">30<em>+</em></div>
+      <div class="big-num-cap">Years in our community</div>
+    </div>
+    <div class="rv-in">
+      <span class="tag">Above All Carpet and Upholstery Cleaning</span>
+      <h2 class="display">Serving our community for 30 years</h2>
+      <p>Above All Building Maintenance Ltd. has been cleaning carpets and upholstery for homes and businesses in Calgary and the surrounding area for three decades. We use state of the art carpet cleaning methods and advanced equipment to get a deep clean without toxic chemicals.</p>
+      <p>We are available 24 hours a day, 7 days a week, and customer service always comes first.</p>
+      <div class="facts">
+        <div><b>24/7</b><span>Open every hour, every day</span></div>
+        <div><b>Low-tox</b><span>Deep clean without harsh chemicals</span></div>
+        <div><b>Free</b><span>Quotes, plus a website discount</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sv-head">
+      <div>
+        <span class="tag">Our Services</span>
+        <h2 class="display">Professional carpet and upholstery cleaning</h2>
+      </div>
+      <p>For homes, offices and every move in between. Pick a service to see what's involved.</p>
+    </div>
+    <div class="sv">
+      <ul class="sv-list">
+        <li><button class="on" data-i="0"><span class="n">01</span><span class="t">Residential Carpet Cleaning</span><span class="ar">&#8594;</span></button></li>
+        <li><button data-i="1"><span class="n">02</span><span class="t">Commercial Carpet Cleaning</span><span class="ar">&#8594;</span></button></li>
+        <li><button data-i="2"><span class="n">03</span><span class="t">Upholstery Cleaning</span><span class="ar">&#8594;</span></button></li>
+        <li><button data-i="3"><span class="n">04</span><span class="t">Move-In / Move-Out Carpet Cleaning</span><span class="ar">&#8594;</span></button></li>
+      </ul>
+      <div class="sv-panel">
+        <div class="pane on"><img src="images/baby-carpet.jpg" alt="Baby lying on a clean carpet"><div class="cap"><h3>Residential Carpet Cleaning</h3><p>A healthier home for your family, especially if anyone lives with allergies or asthma.</p><div class="chips"><span>Stain removal</span><span>Pet odour removal</span><span>Deodorizing</span></div></div></div>
+        <div class="pane"><img src="images/steam-wand.jpg" alt="Commercial carpet being steam cleaned"><div class="cap"><h3>Commercial Carpet Cleaning</h3><p>Cleaner, healthier workspaces, with service available 24/7 so your business keeps running.</p><div class="chips"><span>Offices</span><span>24/7 scheduling</span><span>Advanced equipment</span></div></div></div>
+        <div class="pane"><img src="images/upholstery.jpg" alt="Upholstered sofa"><div class="cap"><h3>Upholstery Cleaning</h3><p>Sofas and chairs cleaned with products you approve, then protected so they stay fresh.</p><div class="chips"><span>Stain removal</span><span>Deodorizing</span><span>Scotchgard protection</span></div></div></div>
+        <div class="pane"><img src="images/clean-carpet-wide.jpg" alt="Freshly cleaned carpet"><div class="cap"><h3>Move-In / Move-Out Carpet Cleaning</h3><p>Hand over the keys or settle into a new place with carpets that are truly clean.</p><div class="chips"><span>Odour removal</span><span>Stain removal</span><span>Rug cleaning</span></div></div></div>
+      </div>
+    </div>
+    <div class="extras"><b>Also available</b><span>Pet odour removal</span><span>Flood restoration</span><span>Stain removal</span><span>Rug cleaning</span><span>Deodorizing</span><span>Scotchgard protection</span></div>
+  </div>
+</section>
+
+<section class="really">
+  <div class="wrap">
+    <div class="really-img rv-in">
+      <img src="images/rug-vacuum.jpg" alt="Clean line through a carpet showing hidden dirt">
+      <div class="note"><b>6&ndash;12</b><span>months between professional cleans is what we recommend</span></div>
+    </div>
+    <div class="rv-in">
+      <span class="tag">Why it matters</span>
+      <h2 class="display">Your vacuum only reaches the surface</h2>
+      <p>Dust, allergens, bacteria and odours settle deep in carpet fibres. We recommend a professional carpet cleaning every 6 months to 1 year, especially for anyone with allergies or asthma.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><div><b>Kills 99% of bacteria and viruses</b>A cleaner, healthier home or workspace.</div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22c4.4 0 8-3.6 8-8 0-5-8-12-8-12S4 9 4 14c0 4.4 3.6 8 8 8z"/></svg><div><b>No harsh chemicals</b>Non-toxic and low-chemical methods for a deep clean.</div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg><div><b>Odour and stain removal</b>Including pet stains and pet odours.</div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="appt">
+  <div class="wrap">
+    <div class="rv-in">
+      <span class="tag">Our Process</span>
+      <h2 class="display">Every appointment includes</h2>
+      <p>No guesswork and no surprises. Our technicians check your carpet or upholstery first, then clean with products you've approved.</p>
+    </div>
+    <div class="ticket rv-in">
+      <div class="main">
+        <h3>Appointment <span>Above All</span></h3>
+        <ol>
+          <li>Carpet or upholstery assessment to find problem areas</li>
+          <li>Product recommendations</li>
+          <li>Thorough cleaning using products you approve</li>
+          <li>Inspection with care recommendations</li>
+          <li>Professional service, start to finish</li>
+        </ol>
+      </div>
+      <div class="stub">
+        <img src="images/logo.png" alt="">
+        <small>Admit one</small>
+        <b>Cleaner<br>carpets</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="wrap">
+    <div class="gal-head">
+      <div>
+        <span class="tag">Our Work</span>
+        <h2 class="display">Fresh results</h2>
+      </div>
+      <a href="#quote" class="btn btn-line">Get a Free Quote</a>
+    </div>
+    <div class="gal">
+      <figure><img src="images/gallery-1.jpg" alt="Carpet cleaning in progress"><figcaption>Carpet cleaning</figcaption></figure>
+      <figure><img src="images/gallery-2.jpg" alt="Cleaned light carpet"><figcaption>Residential</figcaption></figure>
+      <figure><img src="images/gallery-3.jpg" alt="Steam cleaning carpet"><figcaption>Steam cleaning</figcaption></figure>
+      <figure><img src="images/gallery-4.jpg" alt="Soft clean carpet"><figcaption>Family-safe clean</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="gal-head">
+      <div>
+        <span class="tag">Testimonials</span>
+        <h2 class="display">What our customers say</h2>
+      </div>
+    </div>
+    <div class="rv">
+      <div class="rv-card big rv-in">
+        <div class="qm">&ldquo;</div>
+        <blockquote>Friendly, knowledgeable and great results on our rugs. I highly recommend Above All.</blockquote>
+        <div class="who"><i>N</i><div><b>Nancy Stanners</b><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div></div>
+      </div>
+      <div class="rv-card rv-in">
+        <div class="qm">&ldquo;</div>
+        <blockquote>First time using them. Great communication, and the dog urine, other stains and odours were gone.</blockquote>
+        <div class="who"><i>K</i><div><b>Kevin Everingham</b><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div></div>
+      </div>
+      <div class="rv-card rv-in">
+        <div class="qm">&ldquo;</div>
+        <blockquote>Punctual, professional, and our carpets look amazing. We'll definitely book again.</blockquote>
+        <div class="who"><i>S</i><div><b>Shalena Bennie</b><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div class="quote-box rv-in">
+      <div class="quote-info" id="contact">
+        <span class="offer">Free quote and special discount</span>
+        <h2 class="display">Book an appointment</h2>
+        <p>Mention our website when you book and get a special discount on your cleaning.</p>
+        <div class="c-lines">
+          <a href="tel:4036188123"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></i><span><small>Call 24/7</small>403-618-8123</span></a>
+          <a href="mailto:info@aboveallcarpetandupholsterycleaning.com"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></i><span><small>Email</small>info@aboveallcarpetandupholsterycleaning.com</span></a>
+          <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></i><span><small>Address</small>11 Paradise Acre, Chestermere, AB T1X 0M9</span></div>
+        </div>
+      </div>
+      <form id="qf">
+        <h3>Get your free quote</h3>
+        <label>Name<input name="name" required></label>
+        <label>Phone<input name="phone" type="tel"></label>
+        <label class="full">Email<input name="email" type="email" required></label>
+        <label class="full">Service
+          <select name="service">
+            <option>Residential Carpet Cleaning</option>
+            <option>Commercial Carpet Cleaning</option>
+            <option>Upholstery Cleaning</option>
+            <option>Move-In / Move-Out Carpet Cleaning</option>
+          </select>
+        </label>
+        <label class="full">Message<textarea name="message" placeholder="Tell us about the rooms, stains or pet odours"></textarea></label>
+        <button class="btn btn-red" type="submit">Send My Quote Request &#8594;</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="areas">
+  <div class="wrap">
+    <h3>Proudly serving</h3>
+    <div class="area-list">
+      <span class="home">Chestermere</span><span>Calgary</span><span>Airdrie</span><span>Okotoks</span><span>Strathmore</span><span>Cochrane</span><span>Surrounding communities</span>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <h2 class="display">Book now and get service and results that are <em>Above All</em></h2>
+    <div class="ctas">
+      <a href="tel:4036188123" class="btn btn-white">Call 403-618-8123</a>
+      <a href="#quote" class="btn btn-ghost">Book An Appointment</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-about">
+        <a href="#" class="brand"><img src="images/logo.png" alt="Above All logo"><span class="brand-name">ABOVE ALL<small>Carpet &amp; Upholstery Cleaning</small></span></a>
+        <p>Healthier homes and workspaces across Calgary and the surrounding area for 30 years.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Residential Carpet Cleaning</a></li>
+          <li><a href="#services">Commercial Carpet Cleaning</a></li>
+          <li><a href="#services">Upholstery Cleaning</a></li>
+          <li><a href="#services">Move-In / Move-Out Cleaning</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#quote">Pricing</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="f-contact">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:4036188123"><b>403-618-8123</b></a></li>
+          <li><a href="mailto:info@aboveallcarpetandupholsterycleaning.com">info@aboveallcarpetandupholsterycleaning.com</a></li>
+          <li>11 Paradise Acre, Chestermere, AB T1X 0M9</li>
+          <li>Open 24 hours, 7 days a week</li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>&copy; <span id="yr"></span> Above All Building Maintenance Ltd. All rights reserved.</span>
+      <span>Design by <a href="https://cleaningdigital.ca/" target="_blank" rel="noopener">Cleaning Digital</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:4036188123">Call Now</a>
+  <a href="#quote">Free Quote</a>
+</div>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+// service tabs
+const btns=document.querySelectorAll('.sv-list button'),panes=document.querySelectorAll('.pane');
+btns.forEach(b=>{const go=()=>{btns.forEach(x=>x.classList.remove('on'));panes.forEach(p=>p.classList.remove('on'));b.classList.add('on');panes[b.dataset.i].classList.add('on')};b.addEventListener('click',go);b.addEventListener('mouseenter',()=>{if(matchMedia('(hover:hover)').matches)go()})});
+// reveal
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.rv-in').forEach(el=>io.observe(el));
+// quote form to email
+document.getElementById('qf').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);
+const body=`Name: ${f.get('name')}\nPhone: ${f.get('phone')}\nEmail: ${f.get('email')}\nService: ${f.get('service')}\n\n${f.get('message')}`;
+location.href='mailto:info@aboveallcarpetandupholsterycleaning.com?subject='+encodeURIComponent('Free Quote Request: '+f.get('service'))+'&body='+encodeURIComponent(body)});
+</script>
+</body>
+</html>
